@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\bin\Debug\net6.0\iteration_1.exe
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\bin\Debug\net6.0\iteration_1.deps.json
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\bin\Debug\net6.0\iteration_1.runtimeconfig.json
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\bin\Debug\net6.0\iteration_1.dll
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\bin\Debug\net6.0\iteration_1.pdb
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.AssemblyInfo.cs
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.dll
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\refint\iteration_1.dll
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.pdb
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\iteration_1.genruntimeconfig.cache
+C:\Users\Asus\Desktop\моя учеба\SeminarC#\Seminar_1\iteration_1\obj\Debug\net6.0\ref\iteration_1.dll
