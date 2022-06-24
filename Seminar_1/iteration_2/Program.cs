@@ -1,14 +1,17 @@
 ﻿// Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго
 
-Console.Write("Input numberA: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
+//вводим первое число, сохраняем в переменную
+Console.Write("Input number: ");
+int number_1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input numberB: ");
-int numberB = Convert.ToInt32(Console.ReadLine());
+//вводим второе число, сохраняем в переменную
+Console.Write("Input number: ");
+int number_2 = Convert.ToInt32(Console.ReadLine());
 
-if (numberA == numberB * numberB)
-    Console.Write("a =" + numberA + "b =" + numberB + "->"  + "->" + "Yes");
+//
+if (number_1 == number_2 * number_2)
+    Console.Write("a =" + number_1  + "b =" + number_2 + "->"  + "->" + "Yes");
 else
 {
-    Console.Write("a =" + numberA + "b =" + numberB + "->"  + "->" + "No");
+    Console.Write("a =" + number_1  + "b =" + number_2 + "->"  + "->" + "No");
 }
