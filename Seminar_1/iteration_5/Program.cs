@@ -2,5 +2,5 @@
 
 Console.WriteLine("Введите трёхзначное число ");
 int Number = Convert.ToInt32(Console.ReadLine());
-Console.Write(Number + "-> " + [2]);
+Console.Write(Number + "-> " + Number%10);
 
