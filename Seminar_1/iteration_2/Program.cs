@@ -8,7 +8,7 @@ int number_1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input number: ");
 int number_2 = Convert.ToInt32(Console.ReadLine());
 
-//добавили переменную q, можно без неё, тогда number_2 * number_2 нужно прописывать в if вместо q
+//добавили переменную q, можно без неё, тогда number_2 * number_2 нужно прописывать в if вместо q,,,
 int q = number_2 * number_2;
 
 //сравниваем
