@@ -15,4 +15,4 @@ Console.Write("Введите минимальное число диапазон
 int start = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите максимальное число диапазона ");
 int end = Convert.ToInt32(Console.ReadLine());
-rundomnumber(start, end);
+rundomNumber(start, end);
