@@ -16,7 +16,7 @@ if(number > min && number < max)
     Console.WriteLine(number + "->" + reduce);
 }
 
-    else if(number > max && number < SecondMax)
+    else if(number > max && number <= SecondMax)
     {
         int Div = number / 10;
         int Find = Div % 10;
@@ -35,6 +35,6 @@ else
 }
 Console.Write("Введите минимальное число диапазона ");
 int start = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите максимальное число диапазона ");
+Console.Write("Введите максимальное число диапазона до 99999 ");
 int end = Convert.ToInt32(Console.ReadLine());
 rundomNumber(start, end);
