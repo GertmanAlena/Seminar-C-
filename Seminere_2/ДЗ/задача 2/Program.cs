@@ -3,55 +3,30 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-void FillArray(int[] collection)
+int number = new Random().Next(1, 100000);
+int min = 100;
+int max = 999;
+int SecondMax = 9999;
+
+if(number > min && number < max)
 {
-    int Length = collection.Length;
-    int index = 0;
-    while (index < Length)
-    {
-        collection[index] = new Random().Next(1, 10);
-        index++;
-    }
+    int reduce = number % 10;
+    Console.WriteLine(number + "->" + reduce);
 }
 
-// метод void кторый будет печатать массив
-void PrintArray(int[] col)
-{
-    int count = col.Length;
-    int position = 0;
-    while (position < count)
+    else if(number > max && number < SecondMax)
     {
-        Console.WriteLine(col[position]);
-        position++;
+        int Div = number / 10;
+        int Find = Div % 10;
+        Console.Write(number + "->" + Find);
     }
-}
-
-// метод ind возвращает позицию index
-int IndexOf(int[] collection, int index)
+            else if(number < min)
+            {
+                Console.Write(number + "->" + "число двухзначное");
+            }
+else
 {
-    int count = collection.Length;
-    int index = 0;
-    int position = -1;
-
-    while (index < count)
-    {
-        if(collection[index] == index)
-        {
-            position = index;
-            break;
-        }
-        index++;
-
-    }
-    return position;
+    int bigNumber = number / 100;
+    int Lot = bigNumber % 10;
+    Console.WriteLine(number + "->" + Lot);
 }
-int[] array = new int[10];
-
-FillArray(array);
-PrintArray(array);
-
-Console.WriteLine();
-
-int pos = IndexOf(array, 4);
-Console.WriteLine(pos);
-
