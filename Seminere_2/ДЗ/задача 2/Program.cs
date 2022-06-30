@@ -2,8 +2,10 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
+void rundomNumber(int A, int B){
+int number = new Random().Next(A, B+1);
 
-int number = new Random().Next(1, 100000);
+// int number = new Random().Next(1, 100000);
 int min = 100;
 int max = 999;
 int SecondMax = 9999;
@@ -22,7 +24,7 @@ if(number > min && number < max)
     }
             else if(number < min)
             {
-                Console.Write(number + "->" + "число двухзначное");
+                Console.Write(number + "->" + "третьей цифры нет");
             }
 else
 {
@@ -30,3 +32,9 @@ else
     int Lot = bigNumber % 10;
     Console.WriteLine(number + "->" + Lot);
 }
+}
+Console.Write("Введите минимальное число диапазона ");
+int start = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите максимальное число диапазона ");
+int end = Convert.ToInt32(Console.ReadLine());
+rundomNumber(start, end);
