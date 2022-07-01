@@ -1,7 +1,7 @@
 ﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
 
-// void rundomNumber(int start){
+void Start(){
 int RandomNumber = new Random().Next(10000, 100000);
 
 Console.Write(RandomNumber + "-> ");
@@ -20,7 +20,8 @@ if(RandomNumber == polindromes)
 }
 else
 Console.Write("No");
+}
+Start();
 
-// // rundomNumber();
 
 
