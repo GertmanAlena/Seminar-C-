@@ -40,13 +40,21 @@
 // rundomNumber(start, end);
 
 
-int Number = new Random().Next(1, 100000);
+int Number = new Random().Next(1, 1000000);
 Console.Write(Number + "->");
 int max = 999;
-int Div = 0;
-int Div2 = 0;
+// int Div = 0;
 int max2 = 99;
 
+do
+    {
+    Number = Number / 10;
+    // Console.WriteLine(Number);
+    }while(Number > max);
 
-for(Div = 999; Number > max; Number / 10);
+if(Number <= max && Number > max2)
+    Console.WriteLine("Третья цифра" + "-> " + Number % 10);
+
+else 
+    Console.WriteLine("Третья цифра отсутствует");
 
