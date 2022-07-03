@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.AssemblyInfo.cs
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\bin\Debug\net6.0\Задача с массивом.exe
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\bin\Debug\net6.0\Задача с массивом.deps.json
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\bin\Debug\net6.0\Задача с массивом.runtimeconfig.json
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\bin\Debug\net6.0\Задача с массивом.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\bin\Debug\net6.0\Задача с массивом.pdb
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\refint\Задача с массивом.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.pdb
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\Задача с массивом.genruntimeconfig.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\obj\Debug\net6.0\ref\Задача с массивом.dll
