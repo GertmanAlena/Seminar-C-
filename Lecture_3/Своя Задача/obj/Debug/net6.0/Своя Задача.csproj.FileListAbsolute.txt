@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.AssemblyInfo.cs
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\bin\Debug\net6.0\Своя Задача.exe
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\bin\Debug\net6.0\Своя Задача.deps.json
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\bin\Debug\net6.0\Своя Задача.runtimeconfig.json
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\bin\Debug\net6.0\Своя Задача.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\bin\Debug\net6.0\Своя Задача.pdb
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\refint\Своя Задача.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.pdb
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\Своя Задача.genruntimeconfig.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Своя Задача\obj\Debug\net6.0\ref\Своя Задача.dll
