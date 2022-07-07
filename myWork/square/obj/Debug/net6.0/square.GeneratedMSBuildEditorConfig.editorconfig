@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Задача_с_массивом
-build_property.ProjectDir = c:\Users\Asus\Desktop\моя учеба\Lectures C#\Lecture_3\Задача с массивом\
+build_property.RootNamespace = square
+build_property.ProjectDir = c:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\square\
