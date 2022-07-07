@@ -19,7 +19,7 @@ Double  SystemCoor(int Xa, int Ya, int Za, int Xb, int Yb, int Zb)
     Console.WriteLine("введите координату Zb ");
     int Z2 = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine(Math.Round(SystemCoor(X1, Y1, Z1, X2, Y2, Z2), 2));
+    Console.WriteLine(Math.Round(SystemCoor(X1, Y1, Z1, X2, Y2, Z2)));
 
 
 
