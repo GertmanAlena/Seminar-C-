@@ -69,48 +69,117 @@
 // 4; массив [6, 7, 19, 345, 3] -> нет
 // -3; массив [6, 7, 19, 345, 3] -> да
 
-int[] CreateRandomArray(int size, int min, int max)
-{
-    int[] array = new int[size];
-    for (int i = 0; i < size; i++)
-    {
-        array[i] = new Random().Next(min, max + 1);
-    }
-    return array;
-}
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
 
-void ShowArray(int[] array)
-{
-    Console.Write("[ ");
-    for (int i = 0; i < array.Length; i++)
-        {
-        Console.Write(array[i] + " ");
-        }
-    Console.Write("]");
+// void ShowArray(int[] array)
+// {
+//     Console.Write("[ ");
+//     for (int i = 0; i < array.Length; i++)
+//         {
+//         Console.Write(array[i] + " ");
+//         }
+//     Console.Write("]" + "->");
     
-Console.WriteLine();
-}
+// Console.WriteLine();
+// }
 
-int FindArrey (int[] arrey)
-{
-    Console.WriteLine("Input FIND ");
-    int find = Convert.ToInt32(Console.ReadLine());
-    string msg = "No";
-    for (int i = 0; i < arrey.Length; i++)
-    {
-        if (arrey[i] == find | arrey[i] == -find)
-        {
-            msg = "Yes";
-            break;
-        }
-    }
-    return msg;
-}
-int[] myArray = CreateRandomArray(12, -9, 9);
+//     int[] myArray = CreateRandomArray(12, -9, 9);
 
-FindArrey(myArray);
-ShowArray(myArray);
+//     Console.Write("Input FIND ");
+//     int find = Convert.ToInt32(Console.ReadLine());
+//     string msg = "No";
+//     for (int i = 0; i < myArray.Length; i++)
+//     {
+//         if (myArray[i] == find){
+//             msg = "Yes";
+//             break;
+//         }
+//     }
+//     ShowArray(myArray);
+//     Console.Write(msg);
 
+                            //* * * * * 
+// Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. 
+// Найдите сумму отрицательных и положительных элементов массива.
 
+// int[] CreateRandomArrey(int size, int min, int max)
+// {
+//     int[] newArrey = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         newArrey[i] = new Random().Next(min, max);
+//     }
+//     return newArrey;
+// }
 
+// void ShowArray(int[] arrey)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < arrey.Length; i++)
+//     {
+//         Console.Write($"{arrey[i]},");
+//     }
+//     Console.Write("] ");
+// }
+// int[] myArrey = CreateRandomArrey(12, -9, 9);
+// ShowArray(myArrey);
 
+// int SumPos = 0;
+// int SumNeg = 0;
+// for (int i = 0; i < myArrey.Length; i++)
+// {
+//     if (myArrey[i] < 0)
+//     {
+//         SumNeg += myArrey[i];
+//     }
+//     else
+//     {
+//         SumPos += myArrey[i];
+//     }
+// }
+// Console.Write($"сумма полож = {SumPos} and сумма отрицательных = {SumNeg}");
+
+                    //***  ***  ***
+// Задайте одномерный массив из 123 случайных чисел. 
+// Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
+// Console.Clear();
+// int[] CrRanomMass(int size, int min, int max)
+// {
+//     int[] arrey = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         arrey[i] = new Random().Next(min, max);
+//     }
+//     return arrey;
+// }
+// int[] myArrey = CrRanomMass(123, 1, 10000);
+
+// void PrintMass(int[]Mass)
+// {
+//     int count = 0;
+//     Console.Write("[");
+//     for (int i = 0; i < Mass.Length; i++)
+//     {
+//         Console.Write($"{Mass[i]}, ");
+//         if (Mass[i] > 10 && Mass[i] < 100)
+//         {
+//             count += 1;
+//         }
+//     }
+//     Console.Write("]" + "-> ");
+//     Console.WriteLine(count);
+// }
+// PrintMass(myArrey);
+
+                //****  ****    *****       ********       ****
+//Найдите произведение пар чисел в одномерном массиве. 
+// Парой считаем первый и последний элемент, второй и предпоследний и т.д. 
+// Результат запишите в новом массиве
