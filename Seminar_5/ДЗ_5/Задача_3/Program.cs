@@ -18,7 +18,7 @@ void ShowArray(double[] mass)
 {
     double max = mass[0];
     double min = mass[0];
-    double difference = max - min;
+    
     Console.Write("[");
     for (int i = 0; i < mass.Length; i++)
     {
