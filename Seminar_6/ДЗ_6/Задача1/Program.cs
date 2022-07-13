@@ -5,7 +5,7 @@ int[] myArrey()
 {
     Console.Write("Введите количество элементов массива:\t ");
     int alementsCount = Convert.ToInt32(Console.ReadLine());
-    int[] arrey = new int [alementsCount];
+    int[] arrey = new int[alementsCount];
 
     for (int i = 0; i < arrey.Length; i++)
     {
@@ -14,15 +14,17 @@ int[] myArrey()
     }
     return arrey;
 }
-void PrintMass(int[] inArray){
-   
+void PrintMass(int[] inArray)
+{
+
     for (int i = 0; i < inArray.Length; i++)
     {
-       Console.Write($"{inArray[i]} ");
+        Console.Write($"{inArray[i]} ");
     }
 }
 
-int Cou(int[] mass){
+int Cou(int[] mass)
+{
     int counts = 0;
     for (int i = 0; i < mass.Length; i++)
     {
@@ -33,7 +35,7 @@ int Cou(int[] mass){
     }
     Console.Write($" -> {counts} ");
     return counts;
-    
+
 }
 int[] array = myArrey();
 PrintMass(array);
