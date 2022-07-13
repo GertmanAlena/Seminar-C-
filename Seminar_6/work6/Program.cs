@@ -1,37 +1,21 @@
-﻿int[] myArrey()
-{
-    Console.Write("Введите количество элементов массива:\t ");
-    int alementsCount = Convert.ToInt32(Console.ReadLine());
-    int[] arrey = new int [alementsCount];
+﻿// Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
+// Если N = 5 -> 0 1 1 2 3
+// Если N = 3 -> 0 1 1
+// Если N = 7 -> 0 1 1 2 3 5 8
 
-    for (int i = 0; i < arrey.Length; i++)
-    {
-        Console.Write($"Введите элемент массива под индексом {i}:\t ");
-        arrey[i] = Convert.ToInt32(Console.ReadLine());
-    }
-    return arrey;
-}
-void PrintMass(int[] inArray){
-   
-    for (int i = 0; i < inArray.Length; i++)
-    {
-       Console.Write($"{inArray[i]} ");
-    }
-}
+void Febonachi(){
 
-int Cou(int[] mass){
-    int counts = 0;
-    for (int i = 0; i < mass.Length; i++)
+    int amountNumberts = 12;
+    int number1 = 0;
+    int number2 = 1;
+    Console.Write($"{number1}, {number2}, ->");
+    for (int i = 0; i < amountNumberts; i++)
     {
-        if (mass[i] > 0)
-        {
-            counts += 1;
-        }
+        
+        int NextNumber = number1 + number2;
+        number1 = number2;
+        number2 = NextNumber;
+        Console.Write($" {NextNumber}, ");
     }
-    Console.Write($" -> {counts} ");
-    return counts;
-    
 }
-int[] array = myArrey();
-PrintMass(array);
-Cou(array);
+Febonachi();
