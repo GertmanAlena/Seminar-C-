@@ -41,7 +41,7 @@
     //     }
        
     // }
-
+int[] myMass1 = array1();
 int[] array1(){
 
     int[] myArray1 = new int[5];
@@ -58,18 +58,5 @@ void ShowArray1(int[] massive){
         Console.Write($"{massive[i]}, ");
     }
 }
-
-int[] array2(int[] massive2){
-
-    int[] massive2 = new int[5];
-    for (int i = 0; i < 5; i++)
-    {
-       massive2[i] = myArray1[i];
-    }
-    return massive2;
-}
-int[] myMass1 = array1();
 ShowArray1(myMass1);
-array2(myMass1);
-
 
