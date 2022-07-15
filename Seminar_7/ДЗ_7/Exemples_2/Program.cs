@@ -5,6 +5,7 @@
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
+
 // Console.Clear();
 // int[,] CreateArray(int m, int n, int minVolume, int maxVolume)
 // {
