@@ -105,6 +105,8 @@
 // }
 // Console.WriteLine(Factorial(5)); //1*2*3*4*5 
 
+                                // *************   МАТРИЦА
+
 using System;
 using System.Linq;
 using System.Text;
@@ -157,7 +159,7 @@ namespace ConsoleMatrixEffect
         private readonly int _height;
  
         private readonly Random _rand = new Random(); // задаю глобальный рандомизатор для символов.
-        private const int period = 6; // для вычисления скорости столбцов
+        private const int period = 10; // для вычисления скорости столбцов
  
         /// <summary>
         /// 
@@ -192,46 +194,46 @@ namespace ConsoleMatrixEffect
             }
         }
  
-        /// <summary>               МАТРИЦА
+        /// <summary>
         /// Печатаю матрицу в консоли
         /// </summary>
-//         public void ShowMatrix()
-//         {
-//             // сбрасываю позицию курсока в начальную позицию
-//             Console.SetCursorPosition(0, 0);
+        public void ShowMatrix()
+        {
+            // сбрасываю позицию курсока в начальную позицию
+            Console.SetCursorPosition(0, 0);
  
-//             // вывожу символы построчно
-//             for (var h = 0; h < _height; h++)
-//             {
-//                 var s = new string(_matrix[h]); // делаю из массива символов одну строку, т.к. печать одной строки намного быстрее, чем печать символов по одному
-//                 if (h < _height - 1) Console.WriteLine(s);
-//                 else Console.Write(s); // последнюю строку печатаю без переноса, чтобы не образовалась пустая строка внизу
-//             }
-//         }
+            // вывожу символы построчно
+            for (var h = 0; h < _height; h++)
+            {
+                var s = new string(_matrix[h]); // делаю из массива символов одну строку, т.к. печать одной строки намного быстрее, чем печать символов по одному
+                if (h < _height - 1) Console.WriteLine(s);
+                else Console.Write(s); // последнюю строку печатаю без переноса, чтобы не образовалась пустая строка внизу
+            }
+        }
  
-//         /// <summary>
-//         /// Метод для сдвига символов в столбцах
-//         /// </summary>
-//         /// <param name="cycle"></param>
-//         public void ShiftMatrixElements(int cycle)
-//         {
-//             for (var w = 0; w < _width; w += 2) // каждый второй столбец пустой
-//             {
-//                 if (w % period > cycle % period) continue; // регулирую скорость для разных столбцов
+        /// <summary>
+        /// Метод для сдвига символов в столбцах
+        /// </summary>
+        /// <param name="cycle"></param>
+        public void ShiftMatrixElements(int cycle)
+        {
+            for (var w = 0; w < _width; w += 2) // каждый второй столбец пустой
+            {
+                if (w % period > cycle % period) continue; // регулирую скорость для разных столбцов
  
-//                 // сдвигаю все символы в столбце вниз на один символ
-//                 for (var h = _height - 1; h >= 0; h--)
-//                 {
-//                     // для первой строки добавляю случайный символ
-//                     if (h == 0)
-//                     {
-//                         _matrix[h][w] = _symbols[_rand.Next(0, _symbolsLen)];
-//                         continue;
-//                     }
-//                     // перемещаю вышестоящий символ в текущую строку
-//                     _matrix[h][w] = _matrix[h - 1][w];
-//                 }
-//             }
-//         }
-//     }
-// }
+                // сдвигаю все символы в столбце вниз на один символ
+                for (var h = _height - 1; h >= 0; h--)
+                {
+                    // для первой строки добавляю случайный символ
+                    if (h == 0)
+                    {
+                        _matrix[h][w] = _symbols[_rand.Next(0, _symbolsLen)];
+                        continue;
+                    }
+                    // перемещаю вышестоящий символ в текущую строку
+                    _matrix[h][w] = _matrix[h - 1][w];
+                }
+            }
+        }
+    }
+}
