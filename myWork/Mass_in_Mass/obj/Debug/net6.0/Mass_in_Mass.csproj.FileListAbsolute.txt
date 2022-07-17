@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.AssemblyInfo.cs
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\bin\Debug\net6.0\Mass_in_Mass.exe
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\bin\Debug\net6.0\Mass_in_Mass.deps.json
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\bin\Debug\net6.0\Mass_in_Mass.runtimeconfig.json
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\bin\Debug\net6.0\Mass_in_Mass.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\bin\Debug\net6.0\Mass_in_Mass.pdb
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\refint\Mass_in_Mass.dll
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.pdb
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\Mass_in_Mass.genruntimeconfig.cache
+C:\Users\Asus\Desktop\моя учеба\Lectures C#\myWork\Mass_in_Mass\obj\Debug\net6.0\ref\Mass_in_Mass.dll
