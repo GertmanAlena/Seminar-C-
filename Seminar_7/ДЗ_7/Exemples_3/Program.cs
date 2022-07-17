@@ -77,7 +77,7 @@
 
 
 Console.Clear();
-int[,] RandomArray(int m, int n, int minVolue, int maxValue)
+int[,] RandomArray(int m, int n, int minVolue, int maxValue) //метод создания массива
 {
     int[,] Array = new int[m, n];
     for (int i = 0; i < m; i++)
@@ -89,7 +89,7 @@ int[,] RandomArray(int m, int n, int minVolue, int maxValue)
     }
     return Array;
 }
-void PrintArray(int[,] mass)
+void PrintArray(int[,] mass) 
 {
     for (int rows = 0; rows < mass.GetLength(0); rows++)
     {
@@ -100,16 +100,15 @@ void PrintArray(int[,] mass)
         Console.WriteLine();
     }
 }
-double[] ArifmeticSumAlements(int[,] ArraySum)
+double[] ArifmeticSumAlements(int[,] ArraySum) //метод создания нового массива
 {
-    double[] NewSumArray = new double[ArraySum.GetLength(1)];   
-    // int z = 0;
+    double[] NewSumArray = new double[ArraySum.GetLength(1)]; //длиннанового одномерного массива равна количеству столбцов принятого двумерного  
     for (int rows = 0; rows < ArraySum.GetLength(0); rows++)
         {
-            int z = 0;
+            int z = 0; //индекс нового массива, который обнуляется для каждого круга
             for (int columns = 0; columns < ArraySum.GetLength(1); columns++)
             {
-               
+               //ссумируем элементы многомерного и складываем в новый
                 NewSumArray[z] = NewSumArray[z] + ArraySum[rows, columns];
                 z++;
             }
@@ -120,7 +119,7 @@ double[] ArifmeticSumAlements(int[,] ArraySum)
             
 }
 
-void PrintArifmetic(double[] mass)
+void PrintArifmetic(double[] mass) //выводим новый одномерный массив 
 {
     for (int i = 0; i < mass.Length; i++)
     {
@@ -128,14 +127,15 @@ void PrintArifmetic(double[] mass)
     }
 }    
 
-void PrintArifmetic2(double[] mass, int q)
+void PrintArifmetic2(double[] mass, int q) //метод принимает одномерный массив и аргумент количества строк для среднего арифметического
 {
     Console.WriteLine();
     for (int i = 0; i < mass.Length; i++)
     {
-        Console.Write($"{Math.Round(mass[i]/q, 2)} \t");
+        Console.Write($"{Math.Round(mass[i]/q, 2)} \t"); //элемент массива с текущим индексом делим на колич. строк двумерного массива
     }
 }    
+
 Console.Write("Input rows ");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input columns ");
