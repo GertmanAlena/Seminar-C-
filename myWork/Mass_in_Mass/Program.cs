@@ -25,35 +25,43 @@
 // Формируется и выводится прямоугольный массив (5 строк и 6 столбцов)
 // целых случайных чисел от -40 до 40. Вычисляется и выводится: а) сумма
 // чисел в каждой строке; б) среднее арифметическое чисел в каждой строке;
-Console.Clear();
-int[,] CreateArray()
-{
-    int[,] array = new int[5, 6];
-    for (int rows = 0; rows < 5; rows++)
-    {
-        for (int columns = 0; columns < 6; columns++)
-        {
-            array[rows, columns] = new Random().Next(-40, 40);
-        }
-    }
-    return array;
-}
-void ShowArray(int[,] mass)
-{
-    int Sum = 0;
-    double ArithmeticMain = 0;
-    for (int rows = 0; rows < mass.GetLength(0); rows++)
-    {
-        for (int columns = 0; columns < mass.GetLength(1); columns++)
-        {
-            Sum += mass[rows, columns];
-            Console.Write($"{mass[rows, columns]} \t");
-        }
-        ArithmeticMain = Sum/mass.GetLength(1);
-        Console.Write($" сумма = {Sum} \t -> {Math.Round(ArithmeticMain, 2)}");
-        Console.WriteLine();
-        Sum = 0;
-    }
-}
-int[,] myArray = CreateArray();
-ShowArray(myArray);
+// Console.Clear();
+// int[,] CreateArray()
+// {
+//     int[,] array = new int[5, 6];
+//     for (int rows = 0; rows < 5; rows++)
+//     {
+//         for (int columns = 0; columns < 6; columns++)
+//         {
+//             array[rows, columns] = new Random().Next(-40, 40);
+//         }
+//     }
+//     return array;
+// }
+// void ShowArray(int[,] mass)
+// {
+//     double Sum = 0;
+//     double ArithmeticMain = 0;
+//     for (int rows = 0; rows < mass.GetLength(0); rows++)
+//     {
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//         {
+//             Sum += mass[rows, columns];
+//             Console.Write($"{mass[rows, columns]} \t");
+//         }
+//         ArithmeticMain = Sum/mass.GetLength(1);
+//         Console.Write($" сумма = {Sum} \t -> {Math.Round(ArithmeticMain, 2)}");
+//         Console.WriteLine();
+//         Sum = 0;
+//     }
+// }
+// int[,] myArray = CreateArray();
+// ShowArray(myArray);
+
+//***           ***         ***         ***         ***
+// Формируется и выводится прямоугольный массив (n строк и m столбцов)
+// целых случайных чисел от -50 до 50. Вычисляется и выводится: а) среднее
+// арифметическое отрицательных чисел в каждой строке; в) сумма и среднее
+// арифметическое положительных четных чисел в каждой строке; д) сумма и
+// среднее арифметическое всех чисел.
+int[,] RandomArray (int n, )
