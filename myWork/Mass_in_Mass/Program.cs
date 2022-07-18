@@ -25,7 +25,7 @@
 // Формируется и выводится прямоугольный массив (5 строк и 6 столбцов)
 // целых случайных чисел от -40 до 40. Вычисляется и выводится: а) сумма
 // чисел в каждой строке; б) среднее арифметическое чисел в каждой строке;
-
+Console.Clear();
 int[,] CreateArray()
 {
     int[,] array = new int[5, 6];
@@ -38,7 +38,6 @@ int[,] CreateArray()
     }
     return array;
 }
-
 void ShowArray(int[,] mass)
 {
     int Sum = 0;
@@ -51,7 +50,7 @@ void ShowArray(int[,] mass)
             Console.Write($"{mass[rows, columns]} \t");
         }
         ArithmeticMain = Sum/mass.GetLength(1);
-        Console.Write($" сумма = {Sum} -> {Math.Round(ArithmeticMain, 2)}");
+        Console.Write($" сумма = {Sum} \t -> {Math.Round(ArithmeticMain, 2)}");
         Console.WriteLine();
         Sum = 0;
     }
