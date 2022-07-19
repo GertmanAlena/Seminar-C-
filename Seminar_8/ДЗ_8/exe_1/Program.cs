@@ -1,6 +1,6 @@
 ﻿// Задайте двумерный массив. 
 // Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
-// Console.Clear();
+Console.Clear();
 int[,] CreateArray (int m, int n, int min, int max)
 {
     int[,] Array = new int [m, n];
