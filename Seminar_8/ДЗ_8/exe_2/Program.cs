@@ -18,31 +18,41 @@ void PrintArray (int[,] mass)
 {
     for (int rows = 0; rows < mass.GetLength(0); rows++)
     {
+        int S = 0;
         for (int columns = 0; columns < mass.GetLength(1); columns++)
         {
+            S += mass[rows, columns];
             Console.Write($"{mass[rows, columns]}\t ");
         }
+    Console.Write($" сумма строки = {S}\t ");
     Console.WriteLine();
     }
     Console.WriteLine();
 }
 
-void SumArray(int[,] sumMass)
+int MinSumRows(int[,] sumMass)
 {
-    int MinSum = Sum;
-    for (int rows = 0; rows < sumMass.GetLength(0); rows++)
+    int minSum = 0; 
+    int row = 0;
+    {
+    for (int i = 0; i < sumMass.GetLength(1); i++)  //прошли только по первой строке и нашли сумму, 
+                                                    //положили её в минимальное значение
+        minSum = minSum + sumMass[0,i];
+    }
+    for (int i = 1; i < sumMass.GetLength(0); i++) 
     {
         int Sum = 0;
-        
-        for (int columns = 0; columns < sumMass.GetLength(1); columns++)
+        for (int j = 0; j < sumMass.GetLength(1); j++) //обычный счётчик по строкам и столбцам
         {
-            Sum += sumMass[rows, columns];
+            Sum += sumMass[i, j];
         }
-        Console.WriteLine($"сумма строки с индексом [{rows}] = {Sum}\t");
-        if(Sum < MinSum) MinSum = Sum;
-        
-        Console.WriteLine($"{MinSum}\t");
+        if (Sum < minSum)
+        {
+            minSum = Sum;
+            row = i;
+        }
     }
+    return row;
 }
 
 Console.Write("Введите количество строк ");
@@ -56,4 +66,5 @@ int maxValue = Convert.ToInt32(Console.ReadLine());
 int[,]myArray = CreateArray(str, col, minValue, maxValue);
 PrintArray(myArray);
 
-SumArray(myArray);
+int minS = MinSumRows(myArray);
+Console.WriteLine($"минимальная сумма чисел в {minS+1} строке");
