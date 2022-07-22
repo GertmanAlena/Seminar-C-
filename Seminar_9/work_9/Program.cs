@@ -104,3 +104,57 @@
 // int c = Convert.ToInt32(Console.ReadLine());
 // int[,] myArray = CreateArray(s, c);
 // PrintArray(myArray);
+
+// ***     ***         ***         ***         ***
+// Формируется и выводится прямоугольный массив (n строк и m столбцов)
+// целых случайных чисел от -50 до 50. Вычисляется и выводится: а) среднее
+// арифметическое отрицательных чисел в каждой строке; в) сумма и среднее
+// арифметическое положительных четных чисел в каждой строке; д) сумма и
+// среднее арифметическое всех чисел.
+// int[,] CreateArray(int str, int col)
+// {
+//     int[,] array = new int[str, col];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(-3, 15);
+//         }
+//     }
+//     return array;
+// }
+// void PrintArray(int[,] mass)
+// {
+//     int allSum = 0;
+//     for (int rows = 0; rows < mass.GetLength(0); rows++)
+//     {
+//         int SumMin = 0;
+//         // int SumPol = 0;
+//         double SrArifm = 0;
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//         {
+//             if (mass[rows, columns] < 0) SumMin += mass[rows, columns];
+//             SrArifm = SumMin / mass.GetLength(1);
+//             allSum += mass[rows, columns];
+//             Console.Write($"{mass[rows, columns]}\t ");
+            
+//         }
+        
+//         Console.WriteLine($"сумма отриц = {SumMin} -> ср/ар отриц/ч строки = {(Math.Round(SrArifm), 2)}");
+//     }
+//         Console.WriteLine($" вся сумма--> {allSum}");
+// }
+
+// Console.Clear();
+// Console.WriteLine("Input string: ");
+// int s = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input columns: ");
+// int c = Convert.ToInt32(Console.ReadLine());
+// int[,] myArray = CreateArray(s, c);
+// PrintArray(myArray);
+
+//                           ***     ***         ***         ***         ***
+// Формируется и выводится прямоугольный массив - таблица умножения двух
+// чисел от 1 до 10.
+
+
