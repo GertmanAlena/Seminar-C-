@@ -137,9 +137,9 @@
 //             SrArifm = SumMin / mass.GetLength(1);
 //             allSum += mass[rows, columns];
 //             Console.Write($"{mass[rows, columns]}\t ");
-            
+
 //         }
-        
+
 //         Console.WriteLine($"сумма отриц = {SumMin} -> ср/ар отриц/ч строки = {(Math.Round(SrArifm), 2)}");
 //     }
 //         Console.WriteLine($" вся сумма--> {allSum}");
@@ -188,33 +188,140 @@
 // целых случайных чисел от -70 до 70. Вычисляется и выводится:
 // а) максимальный элемент в каждой строке; б) минимальный положительный
 // элемент в каждой строке.
-int[,] CreateArray()
+// int[,] CreateArray()
+// {
+//     int[,] array = new int[6, 8];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(-70, 70);
+//         }
+//     }
+//     return array;
+// }
+// void PrintArray(int[,] mass)
+// {
+//     int MinPositivNumber = mass[0, 0];
+//     for (int rows = 0; rows < mass.GetLength(0); rows++)
+//     {    
+//         int Max = mass[rows, 0];
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//         {
+//             Console.Write($"{mass[rows, columns]}\t ");
+//             if(mass[rows, columns] > Max) Max = mass[rows, columns];
+//         }
+//         Console.Write($"max alement -> {Max}");
+//         Console.WriteLine();
+//     }
+//     for (int rows = 0; rows < mass.GetLength(0); rows++)
+//     {    
+
+//             for (int columns = 0; columns < mass.GetLength(1); columns++)
+//             {
+//                 if(mass[rows, columns] > 0) MinPositivNumber = mass[rows, columns];
+//             }
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//             {
+//                 if(mass[rows, columns] > 0 && mass[rows, columns] < MinPositivNumber) MinPositivNumber = mass[rows, columns];
+//             }
+//     Console.WriteLine($" minPositivNumber первой строки -> {MinPositivNumber}");
+//     }
+// }
+// int[,] myArray = CreateArray();
+// PrintArray(myArray);
+
+//                               ***     ***         ***         ***         ***
+// Формируется и выводится прямоугольный массив (n строк и m столбцов)
+// целых случайных чисел от -80 до 80. а) в каждой строке находится
+// минимальный элемент и заменяется нулем; б) в каждом столбце находится
+// максимальный элемент и заменяется единицей
+int[,] CreateArray(int n, int m)
 {
-    int[,] array = new int[6, 8];
-    for (int i = 0; i < array.GetLength(0); i++)
+    int[,] array = new int[n, m];
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < m; j++)
         {
-            array[i, j] = new Random().Next(-70, 70);
+            array[i, j] = new Random().Next(-80, 80);
         }
     }
     return array;
 }
+
 void PrintArray(int[,] mass)
 {
     for (int rows = 0; rows < mass.GetLength(0); rows++)
-    int Max = mass[rows, 0];
-    {
-        
+    {    
+        int min = mass[rows, 0];
         for (int columns = 0; columns < mass.GetLength(1); columns++)
         {
-            if(mass[rows, columns] > Max) Max = mass[rows, columns];
             Console.Write($"{mass[rows, columns]}\t ");
+            if(mass[rows, columns] < min) 
+            {
+                min = mass[rows,columns];
+            }
         }
-        Console.Write($"max alement -> {Max}");
-        
-    Console.WriteLine();
+        Console.Write($"min -> {min}");
+        Console.WriteLine();
     }
 }
-int[,] myArray = CreateArray();
+
+void ReplacementArrayTwo(int[,] mass)
+{
+    for (int rows = 0; rows < mass.GetLength(0); rows++)
+    {
+        int min = mass[rows, 0];
+        int rowsMinPosicion = 0;
+        int columnMinPosicion = 0;
+        for (int columns = 0; columns < mass.GetLength(1); columns++)
+        {
+            if (mass[rows, columns] < min)
+            {
+                min = mass[rows, columns];
+                rowsMinPosicion = rows;
+                columnMinPosicion = columns;
+            }
+            
+        }
+        mass[rowsMinPosicion, columnMinPosicion] = 0;
+        for (int columns = 0; columns < mass.GetLength(1); columns++)
+        {
+            Console.Write($"{mass[rows, columns]}\t");
+        }
+        Console.WriteLine();
+    }
+    // for (int columns = 0; columns < mass.GetLength(1); columns++)
+    // {
+    //     int max = mass[0, columns];
+    //     int rowsMaxPosicion = 0;
+    //     int columnMaxPosicion = 0;
+    //     for (int rows = 0; rows < mass.GetLength(0); rows++)
+    //     {
+    //         if (mass[rows, columns] > max)
+    //         {
+    //             max = mass[rows, columns];
+    //             rowsMaxPosicion = rows;
+    //             columnMaxPosicion = columns;
+    //         }
+    //         mass[rowsMaxPosicion, columnMaxPosicion] = 1;
+            
+    //     }
+    
+    //     Console.WriteLine();
+    // }
+}
+
+
+Console.Clear();
+Console.Write("Input n ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input m ");
+int m = Convert.ToInt32(Console.ReadLine());
+int[,] myArray = CreateArray(n, m);
 PrintArray(myArray);
+Console.WriteLine();
+ReplacementArrayTwo(myArray);
+
+
+
