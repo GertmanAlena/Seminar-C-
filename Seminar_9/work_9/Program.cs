@@ -157,4 +157,64 @@
 // Формируется и выводится прямоугольный массив - таблица умножения двух
 // чисел от 1 до 10.
 
+// int[,] CreateArray()
+// {
+//     int[,] array = new int[5, 10];
+//     for (int i = 1; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 1; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = i*j;
+//         }
+//     }
+//     return array;
+// }
+// void PrintArray(int[,] mass)
+// {
+//     for (int rows = 1; rows < mass.GetLength(0); rows++)
+//     {
+//         for (int columns = 1; columns < mass.GetLength(1); columns++)
+//         {
+//             Console.Write($"{mass[rows, columns]}\t ");
+//         }
+//     Console.WriteLine();
+//     }
+// }
+// int[,] myArray = CreateArray();
+// PrintArray(myArray);
 
+//                           ***     ***         ***         ***         ***
+// Формируется и выводится прямоугольный массив (6 строк и 8 столбцов)
+// целых случайных чисел от -70 до 70. Вычисляется и выводится:
+// а) максимальный элемент в каждой строке; б) минимальный положительный
+// элемент в каждой строке.
+int[,] CreateArray()
+{
+    int[,] array = new int[6, 8];
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(-70, 70);
+        }
+    }
+    return array;
+}
+void PrintArray(int[,] mass)
+{
+    for (int rows = 0; rows < mass.GetLength(0); rows++)
+    int Max = mass[rows, 0];
+    {
+        
+        for (int columns = 0; columns < mass.GetLength(1); columns++)
+        {
+            if(mass[rows, columns] > Max) Max = mass[rows, columns];
+            Console.Write($"{mass[rows, columns]}\t ");
+        }
+        Console.Write($"max alement -> {Max}");
+        
+    Console.WriteLine();
+    }
+}
+int[,] myArray = CreateArray();
+PrintArray(myArray);
