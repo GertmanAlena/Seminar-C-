@@ -253,68 +253,44 @@
 // {
 //     for (int rows = 0; rows < mass.GetLength(0); rows++)
 //     {    
-//         int min = mass[rows, 0];
 //         for (int columns = 0; columns < mass.GetLength(1); columns++)
 //         {
 //             Console.Write($"{mass[rows, columns]}\t ");
-//             if(mass[rows, columns] < min) 
-//             {
-//                 min = mass[rows,columns];
-//             }
 //         }
-//         Console.Write($"min -> {min}");
 //         Console.WriteLine();
 //     }
 // }
 
-// void ReplacementArrayTwo(int[,] mass)
+// void FindRows(int[,] mass)
 // {
 //     for (int rows = 0; rows < mass.GetLength(0); rows++)
 //     {
-//         int min = mass[rows, 0];
-//         int rowsMinPosicion = 0;
-//         int columnMinPosicion = 0;
+//         int min = 0;
 //         for (int columns = 0; columns < mass.GetLength(1); columns++)
 //         {
-//             if (mass[rows, columns] < min)
+//             if (mass[rows, min] > mass[rows, columns])
 //             {
-//                 min = mass[rows, columns];
-//                 rowsMinPosicion = rows;
-//                 columnMinPosicion = columns;
-//             }
-
-//         }
-//         mass[rowsMinPosicion, columnMinPosicion] = 0;
-//         for (int columns = 0; columns < mass.GetLength(1); columns++)
-//         {
-//             Console.Write($"{mass[rows, columns]}\t");
-//         }
-//         Console.WriteLine();
-//     }
-//     Console.WriteLine();
-//     for (int columns = 0; columns < mass.GetLength(1); columns++)
-//     {
-//         int max = mass[0, columns];
-//         int rowsMaxPosicion = 0;
-//         int columnMaxPosicion = 0;
-//         for (int rows = 0; rows < mass.GetLength(0); rows++)
-//         {
-//             if (mass[rows, columns] > max)
-//             {
-//                 max = mass[rows, columns];
-//                 rowsMaxPosicion = rows;
-//                 columnMaxPosicion = columns;
+//                 min = columns;
 //             }
 //         }
-//         mass[columnMaxPosicion, rowsMaxPosicion] = 1;
-//         for (int rows = 0; rows < mass.GetLength(1); rows++)
-//         {
-//             Console.Write($"{mass[rows, columns]}\t");
-//         }
-//         Console.WriteLine();
+//         mass[rows, min] = 0;
 //     }
 // }
-
+// void FindColumns(int[,] mass)
+// {
+//     for (int j = 0; j < mass.GetLength(1); j++)
+//     {
+//         int max = 0;
+//         for (int i = 0; i < mass.GetLength(0); i++)
+//         {
+//             if (mass[j, max] < mass[j, i])
+//             {
+//                 max = i;
+//             }
+//         }
+//         mass[j, max] = 1;
+//     }
+// }
 // Console.Clear();
 // Console.Write("Input n ");
 // int n = Convert.ToInt32(Console.ReadLine());
@@ -323,7 +299,11 @@
 // int[,] myArray = CreateArray(n, m);
 // PrintArray(myArray);
 // Console.WriteLine();
-// ReplacementArrayTwo(myArray);
+// FindRows(myArray);
+// PrintArray(myArray);
+// Console.WriteLine();
+// FindColumns(myArray);
+// PrintArray(myArray);
 
 // ***         ***         ***         ***
 // Формируется массив и выводится треугольная таблица, заполненная:
