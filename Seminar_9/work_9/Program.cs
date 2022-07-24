@@ -282,7 +282,7 @@
 //                 rowsMinPosicion = rows;
 //                 columnMinPosicion = columns;
 //             }
-            
+
 //         }
 //         mass[rowsMinPosicion, columnMinPosicion] = 0;
 //         for (int columns = 0; columns < mass.GetLength(1); columns++)
@@ -325,7 +325,7 @@
 // Console.WriteLine();
 // ReplacementArrayTwo(myArray);
 
-                            // ***         ***         ***         ***
+// ***         ***         ***         ***
 // Формируется массив и выводится треугольная таблица, заполненная:
 // а) единицами; б) нулями.
 
@@ -342,69 +342,3 @@
 //              }
 //             Console.WriteLine();
 //         }
-
-void CreateArray(int[,] arr)
-            {
-                Random rand = new Random();
-
-                for (int i = 0; i < arr.GetLength(0); i++)
-                {
-                    for (int j = 0; j < arr.GetLength(1); j++)
-                        arr[i, j] = rand.Next(-80, 80);
-                }
-            }
-            void PrintArray(int[,] arr)
-            {
-                for(int i=0;i<arr.GetLength(0);i++)
-                {
-                    for (int j = 0; j < arr.GetLength(1); j++)
-                        Console.Write(arr[i, j] + "\t");
-                    Console.WriteLine();
-
-                }
-            }
-            void FindRows(int[,] arr)
-            {
-                
-                for (int i=0;i<arr.GetLength(0);i++)
-                {
-                    int min = 0;
-                    for (int j=0;j<arr.GetLength(1);j++)
-                    {
-                        if (arr[i, min] > arr[i, j])
-                            min = j;
-                    }
-                    Console.WriteLine(arr[i, min]);
-                    arr[i, min] = 0;
-                }
-            }
-            void FindCol(int[,] arr)
-            {
-                int min,j;
-                for(int i=0;i<arr.GetLength(1);i++)
-                {
-                    min = 0;
-                    j = 0;
-                    for(;j<arr.GetLength(0);j++)
-                    {
-                        if (arr[min, i] < arr[j, i])
-                            min = j;
-                    }
-                    Console.WriteLine(arr[min, i]);
-                    arr[min, i] = 1;
-                }
-
-            }
-
-            string[] num;
-            Console.WriteLine("введите значение по вертикали и горизонтали, разделяя пробелом :");
-            num = Console.ReadLine().Split(' ');
-            int[,] array = new int[int.Parse(num[0]), int.Parse(num[1])];
-            CreateArray(array);
-            PrintArray(array);
-            Console.WriteLine();
-            FindRows(array);
-            PrintArray(array);
-            FindCol(array);
-            Console.WriteLine();
-            PrintArray(array);
