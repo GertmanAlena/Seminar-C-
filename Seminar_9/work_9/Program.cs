@@ -236,92 +236,175 @@
 // целых случайных чисел от -80 до 80. а) в каждой строке находится
 // минимальный элемент и заменяется нулем; б) в каждом столбце находится
 // максимальный элемент и заменяется единицей
-int[,] CreateArray(int n, int m)
-{
-    int[,] array = new int[n, m];
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            array[i, j] = new Random().Next(-80, 80);
-        }
-    }
-    return array;
-}
+// int[,] CreateArray(int n, int m)
+// {
+//     int[,] array = new int[n, m];
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < m; j++)
+//         {
+//             array[i, j] = new Random().Next(-80, 80);
+//         }
+//     }
+//     return array;
+// }
 
-void PrintArray(int[,] mass)
-{
-    for (int rows = 0; rows < mass.GetLength(0); rows++)
-    {    
-        int min = mass[rows, 0];
-        for (int columns = 0; columns < mass.GetLength(1); columns++)
-        {
-            Console.Write($"{mass[rows, columns]}\t ");
-            if(mass[rows, columns] < min) 
-            {
-                min = mass[rows,columns];
-            }
-        }
-        Console.Write($"min -> {min}");
-        Console.WriteLine();
-    }
-}
+// void PrintArray(int[,] mass)
+// {
+//     for (int rows = 0; rows < mass.GetLength(0); rows++)
+//     {    
+//         int min = mass[rows, 0];
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//         {
+//             Console.Write($"{mass[rows, columns]}\t ");
+//             if(mass[rows, columns] < min) 
+//             {
+//                 min = mass[rows,columns];
+//             }
+//         }
+//         Console.Write($"min -> {min}");
+//         Console.WriteLine();
+//     }
+// }
 
-void ReplacementArrayTwo(int[,] mass)
-{
-    for (int rows = 0; rows < mass.GetLength(0); rows++)
-    {
-        int min = mass[rows, 0];
-        int rowsMinPosicion = 0;
-        int columnMinPosicion = 0;
-        for (int columns = 0; columns < mass.GetLength(1); columns++)
-        {
-            if (mass[rows, columns] < min)
-            {
-                min = mass[rows, columns];
-                rowsMinPosicion = rows;
-                columnMinPosicion = columns;
-            }
+// void ReplacementArrayTwo(int[,] mass)
+// {
+//     for (int rows = 0; rows < mass.GetLength(0); rows++)
+//     {
+//         int min = mass[rows, 0];
+//         int rowsMinPosicion = 0;
+//         int columnMinPosicion = 0;
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//         {
+//             if (mass[rows, columns] < min)
+//             {
+//                 min = mass[rows, columns];
+//                 rowsMinPosicion = rows;
+//                 columnMinPosicion = columns;
+//             }
             
-        }
-        mass[rowsMinPosicion, columnMinPosicion] = 0;
-        for (int columns = 0; columns < mass.GetLength(1); columns++)
-        {
-            Console.Write($"{mass[rows, columns]}\t");
-        }
-        Console.WriteLine();
-    }
-    // for (int columns = 0; columns < mass.GetLength(1); columns++)
-    // {
-    //     int max = mass[0, columns];
-    //     int rowsMaxPosicion = 0;
-    //     int columnMaxPosicion = 0;
-    //     for (int rows = 0; rows < mass.GetLength(0); rows++)
-    //     {
-    //         if (mass[rows, columns] > max)
-    //         {
-    //             max = mass[rows, columns];
-    //             rowsMaxPosicion = rows;
-    //             columnMaxPosicion = columns;
-    //         }
-    //         mass[rowsMaxPosicion, columnMaxPosicion] = 1;
-            
-    //     }
-    
-    //     Console.WriteLine();
-    // }
-}
+//         }
+//         mass[rowsMinPosicion, columnMinPosicion] = 0;
+//         for (int columns = 0; columns < mass.GetLength(1); columns++)
+//         {
+//             Console.Write($"{mass[rows, columns]}\t");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+//     for (int columns = 0; columns < mass.GetLength(1); columns++)
+//     {
+//         int max = mass[0, columns];
+//         int rowsMaxPosicion = 0;
+//         int columnMaxPosicion = 0;
+//         for (int rows = 0; rows < mass.GetLength(0); rows++)
+//         {
+//             if (mass[rows, columns] > max)
+//             {
+//                 max = mass[rows, columns];
+//                 rowsMaxPosicion = rows;
+//                 columnMaxPosicion = columns;
+//             }
+//         }
+//         mass[columnMaxPosicion, rowsMaxPosicion] = 1;
+//         for (int rows = 0; rows < mass.GetLength(1); rows++)
+//         {
+//             Console.Write($"{mass[rows, columns]}\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
+// Console.Clear();
+// Console.Write("Input n ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input m ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// int[,] myArray = CreateArray(n, m);
+// PrintArray(myArray);
+// Console.WriteLine();
+// ReplacementArrayTwo(myArray);
 
-Console.Clear();
-Console.Write("Input n ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input m ");
-int m = Convert.ToInt32(Console.ReadLine());
-int[,] myArray = CreateArray(n, m);
-PrintArray(myArray);
-Console.WriteLine();
-ReplacementArrayTwo(myArray);
+                            // ***         ***         ***         ***
+// Формируется массив и выводится треугольная таблица, заполненная:
+// а) единицами; б) нулями.
 
+// int[] a = new int []{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+//         int[,] aa = new int[4, 4];
+//         int n=0;
+//         for (int i = 0; i < 4; i++)
+//         {
+//             for (int j = 0; j < 4; j++)
+//             {
+//                 if (j <= i) aa[i, j] = a[n++];
+//                 else aa[i, j] = 0;
+//                 Console.Write("{0} ", aa[i,j]);
+//              }
+//             Console.WriteLine();
+//         }
 
+void CreateArray(int[,] arr)
+            {
+                Random rand = new Random();
 
+                for (int i = 0; i < arr.GetLength(0); i++)
+                {
+                    for (int j = 0; j < arr.GetLength(1); j++)
+                        arr[i, j] = rand.Next(-80, 80);
+                }
+            }
+            void PrintArray(int[,] arr)
+            {
+                for(int i=0;i<arr.GetLength(0);i++)
+                {
+                    for (int j = 0; j < arr.GetLength(1); j++)
+                        Console.Write(arr[i, j] + "\t");
+                    Console.WriteLine();
+
+                }
+            }
+            void FindRows(int[,] arr)
+            {
+                
+                for (int i=0;i<arr.GetLength(0);i++)
+                {
+                    int min = 0;
+                    for (int j=0;j<arr.GetLength(1);j++)
+                    {
+                        if (arr[i, min] > arr[i, j])
+                            min = j;
+                    }
+                    Console.WriteLine(arr[i, min]);
+                    arr[i, min] = 0;
+                }
+            }
+            void FindCol(int[,] arr)
+            {
+                int min,j;
+                for(int i=0;i<arr.GetLength(1);i++)
+                {
+                    min = 0;
+                    j = 0;
+                    for(;j<arr.GetLength(0);j++)
+                    {
+                        if (arr[min, i] < arr[j, i])
+                            min = j;
+                    }
+                    Console.WriteLine(arr[min, i]);
+                    arr[min, i] = 1;
+                }
+
+            }
+
+            string[] num;
+            Console.WriteLine("введите значение по вертикали и горизонтали, разделяя пробелом :");
+            num = Console.ReadLine().Split(' ');
+            int[,] array = new int[int.Parse(num[0]), int.Parse(num[1])];
+            CreateArray(array);
+            PrintArray(array);
+            Console.WriteLine();
+            FindRows(array);
+            PrintArray(array);
+            FindCol(array);
+            Console.WriteLine();
+            PrintArray(array);
